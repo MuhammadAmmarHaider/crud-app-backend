@@ -18,8 +18,8 @@ app.get('/',function(req,res){
     res.send("hello from node api")
 });
 
-
-mongoose.connect("mongodb+srv://dbAmmar:Ammar2303@backenddb.u1zec.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
+//make sure to change password
+mongoose.connect("mongodb+srv://dbAmmar:<password>@backenddb.u1zec.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
 .then(()=>{
     console.log("connected to database!")
     app.listen(3000,()=>{
